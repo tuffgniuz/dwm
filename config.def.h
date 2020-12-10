@@ -2,7 +2,7 @@
 /* See LICENSE file for copyright and license details. */
 
 /* appearance */
-static const unsigned int borderpx  = 3;        
+static const unsigned int borderpx  = 3;
 static const unsigned int gappx     = 5;
 static const unsigned int snap      = 32;       
 static const int showbar            = 1;        
@@ -13,27 +13,27 @@ static const char col_gray1[]       = "#282828";
 static const char col_gray2[]       = "#665c54";
 static const char col_gray3[]       = "#fdf9f7";
 static const char col_gray4[]       = "#dfbf8e";
-static const char col_red[]         = "#7daea3";
+static const char col_blue[]         = "#7daea3";
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
 	[SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
-	[SchemeSel]  = { col_gray3, col_red,  col_red    },
+	[SchemeSel]  = { col_gray3, col_blue,  col_blue    },
 };
 
 static const char *tags[] = { 
-	"web", 
+	"www", 
 	"dev", 
 	"doc", 
-	"gfx", 
-	"vbox", 
 	"chat", 
+	"gfx",
+	"vbox",
 	"mp" 
 };
 
 static const Rule rules[] = {
 	/* class      instance    title       tags mask     isfloating   monitor */
 	{ "Gimp",     NULL,       NULL,       0,            1,           -1 },
-	{ "Firefox",  NULL,       NULL,       1 << 8,       0,           -1 },
+	{ "firefox",  NULL,       NULL,       0,			0,           -1 },
 };
 
 /* layout(s) */
@@ -61,13 +61,16 @@ static const Layout layouts[] = {
 
 /* commands */
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
-static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", col_gray1, "-nf", col_gray3, "-sb", col_red, "-sf", col_gray4, NULL };
+static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", col_gray1, "-nf", col_gray3, "-sb", col_blue, "-sf", col_gray4, NULL };
 static const char *termcmd[]  = { "alacritty", NULL };
+static const char *browser[]  = { "firefox", NULL };
 
 static Key keys[] = {
 	/* modifier                     key        function        argument */
 	{ MODKEY,                       XK_p,      spawn,          {.v = dmenucmd } },
 	{ MODKEY,						XK_Return, spawn,          {.v = termcmd } },
+	{ MODKEY,						XK_w,	   spawn,          {.v = browser } },
+
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
 	{ MODKEY,                       XK_j,      focusstack,     {.i = +1 } },
 	{ MODKEY,                       XK_k,      focusstack,     {.i = -1 } },
