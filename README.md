@@ -1,3 +1,5 @@
+![screenshot](./screenshots/dwm_ss.png)
+
 dwm
 -----
 
@@ -10,4 +12,3 @@ My build of dwm is patched with the following:
 - fullgaps (enable gaps between windows)
 - status2d (enable colors for the statusbar)
 
-![screenshot](https://imgur.com/37QFiP7)
