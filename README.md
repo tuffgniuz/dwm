@@ -1,4 +1,4 @@
-*Simple Dark Colorscheme */
+*Simple Dark Colorscheme*
 ![screenshot](./screenshots/simple-dark-cs.png)
 
 *Gruvbox Material Colorscheme*
