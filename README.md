@@ -1,3 +1,6 @@
+screenshots
+----
+
 *Mountaineer Colorscheme*
 ![screenshot](./screenshots/mountaineer.png)
 
@@ -15,9 +18,10 @@ dwm is an incredible lightweight and fast tiling window manager for X developed 
 Patches
 -----
 
-- [fullgaps](https://dwm.suckless.org/patches/fullgaps/dwm-fullgaps-6.2.diff) (enable gaps between windows)
-- [status2d](https://dwm.suckless.org/patches/status2d/dwm-status2d-20200508-60bb3df.diff) (enable colors for the statusbar)
-- [centeredmaster](https://dwm.suckless.org/patches/centeredmaster/dwm-centeredmaster-6.1.diff) ()
+- [fullgaps](https://dwm.suckless.org/patches/fullgaps/dwm-fullgaps-6.2.diff). Enable gaps between windows.
+- [status2d](https://dwm.suckless.org/patches/status2d/dwm-status2d-20200508-60bb3df.diff). Enable colors for the statusbar.
+- [centeredmaster](https://dwm.suckless.org/patches/centeredmaster/dwm-centeredmaster-6.1.diff). Only usefull on widescreens, not so much on mine
+- [attachaside](https://dwm.suckless.org/patches/attachaside/dwm-attachaside-6.1.diff). New windows are added in the stack. Should've been the default behaviour in my opinion.
 
 
 Usage
