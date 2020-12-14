@@ -1,3 +1,6 @@
+*Mountaineer Colorscheme*
+![screenshot](./screenshots/2020-12-15-011802_1920x1080_scrot.png)
+
 *Simple Dark Colorscheme*
 ![screenshot](./screenshots/simple-dark-cs.png)
 
