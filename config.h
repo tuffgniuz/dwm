@@ -7,13 +7,13 @@ static const unsigned int gappx     = 5;
 static const unsigned int snap      = 32;       
 static const int showbar            = 1;        
 static const int topbar             = 1;       
-static const char *fonts[]          = { "Misc Termsyn:size=13" };
-static const char dmenufont[]       = "Misc Termsyn:size=13";
-static const char col_gray1[]       = "#232323";
-static const char col_gray2[]       = "#303030";
+static const char *fonts[]          = { "Dina TTF:size=10" };
+static const char dmenufont[]       = "Dina TTF:size=10";
+static const char col_gray1[]       = "#282828";
+static const char col_gray2[]       = "#665c54";
 static const char col_gray3[]       = "#404040";
 static const char col_gray4[]       = "#3d3d3d";
-static const char col_gray5[]       = "#d5bbbc";
+static const char col_gray5[]       = "#fb4934";
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
 	[SchemeNorm] = { col_gray5, col_gray1, col_gray2 },
@@ -25,9 +25,7 @@ static const char *tags[] = {
 	"dev", 
 	"doc", 
 	"chat", 
-	"gfx",
-	"vbox",
-	"mp" 
+	"media",
 };
 
 static const Rule rules[] = {
